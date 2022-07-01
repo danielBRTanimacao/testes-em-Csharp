@@ -1,18 +1,13 @@
 ﻿Console.Write("Digite seu nome: ");
-String yourName = Console.ReadLine();
-Console.WriteLine($"Iae {yourName}!");
-Console.Write("Digite o seu ano de nascimento: ");
-int year = int.Parse(Console.ReadLine());
-int age = 2022 - year;
-Console.WriteLine($"Você tem {age} anos de idade!");
-
-if(age >= 18)
+string nome = Console.ReadLine();
+Console.WriteLine($"Olá, {nome}");
+Console.Write("Digite sua idade: ");
+int num1 =  int.Parse(Console.ReadLine());
+if(num1 < 18)
+{
+    Console.WriteLine("Você e menor de idade");
+}
+if(num1 >= 18)
 {
     Console.WriteLine("Você e maior de idade!");
-} 
-else
-{ 
-    Console.WriteLine("Você e menor de idade seu corno");
-}    
-  
-    
+}
